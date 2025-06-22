@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="outer-div">
+        <h1 id="inner-1">Resume Analysis Result</h1>
+        <div id="inner-2">
+            <p id="name"><strong>Name:</strong> {{ name }}</p>
+            <h3 id="analysis">Analysis Result:</h3>
+            <p id="score">Similarity Score: {{ similarity_score }}%</p>
+            <h3 id="fback">Feedback</h3>
+            <p id="feedback">{{ feedback }}</p>
+        </div>
+    </div>
+</body>
+
+</html>

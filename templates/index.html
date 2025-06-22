@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="outer-div">
+        <h1 id="inner-1">Resume Similarity Analyzer</h1>
+        <div id="inner-2">
+            <form method="POST" enctype="multipart/form-data">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                <label for="resume">Upload Resume :</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+                <label for="jd">Enter Job Description:</label><br>
+                <textarea id="jd" name="jd" rows="6" cols="50" placeholder="Paste job description here..."
+                    required></textarea><br><br>
+
+                <button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

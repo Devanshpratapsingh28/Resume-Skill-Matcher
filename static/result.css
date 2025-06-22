@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url('back.jpg');
+    background-image: url('back.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    color: #fff;
 }
 
 #outer-div {
@@ -27,7 +28,6 @@ body {
     width: 100%;
     max-width: 500px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    color: #fff;
 }
 
 #inner-1 {
@@ -39,49 +39,51 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+#inner-2 {
+    text-align: left;
 }
 
-label {
-    margin-bottom: 0.5rem;
+#inner-2 h2 {
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
-input[type="text"],
-input[type="file"],
-textarea {
-    padding: 0.8rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
+#analysis {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: center;
     color: #fff;
-    font-size: 1rem;
-    outline: none;
-    resize: none;
-}
-
-input[type="text"]::placeholder,
-textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#submit-btn {
-    padding: 0.8rem;
-    background-color: rgba(0, 123, 255, 0.7);
-    border: none;
+    background-color: #00d4ff;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-#submit-btn:hover {
-    background-color: rgba(0, 123, 255, 1);
+#feedback {
+    margin-top: 1rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1rem;
+    border-left: 5px solid #00d4ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#fback {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -93,10 +95,12 @@ textarea::placeholder {
         font-size: 1.5rem;
     }
 
-    input[type="text"],
-    input[type="file"],
-    textarea,
-    #submit-btn {
-        font-size: 0.95rem;
+    #inner-2 h2 {
+        font-size: 1.3rem;
+    }
+
+    #score,
+    #feedback {
+        font-size: 1rem;
     }
 }

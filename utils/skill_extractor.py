@@ -1,6 +1,7 @@
+import os
 import csv
 from pyresparser import ResumeParser
-from text_preprocessing import remove_punctuation
+from .text_preprocessing import remove_punctuation
 def create_skills_set(path):
     try :
         with open(path,'r',encoding='utf-8') as file :
@@ -9,23 +10,24 @@ def create_skills_set(path):
                 lt = [skill.strip().lower() for skill in row if skill.strip()]
             return set(lt)
     except FileNotFoundError:
-        raise FileNotFoundError(f"CSV file not found")
+        raise FileNotFoundError(f"CSV file not found.")
 
-skill_set = create_skills_set('/Users/devanshpratap28/Documents/TBD/static/skills.csv')
+# For accessing the skills CSV file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+skill_csv = os.path.join(BASE_DIR,'..', 'data', 'skills.csv')
+skill_set = create_skills_set(skill_csv)
 
 def extract_skills(src,is_text=False):
     if skill_set is None:
-        raise ValueError("skill_set must be provided")
+        raise ValueError("Skill_set must be provided for skill extraction from JD.")
     lt = set()
-    if is_text :
+
+    if is_text:
         src_pre = remove_punctuation(src.lower())
         for skill in skill_set:
             if skill in src_pre:
                 lt.add(skill)
-
-
-    else :
-        val = ResumeParser(src).get_extracted_data()
-        lt = set(val.get('skills',[]))
-
+    else:
+        resume_data = ResumeParser(src).get_extracted_data()
+        lt = set(resume_data.get('skills', []))         
     return lt       

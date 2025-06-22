@@ -1,13 +1,13 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from text_preprocessing import preprocess_text
-from text_extractor import extract_pdf_text
+from .text_preprocessing import preprocess_text
+from .text_extractor import extract_pdf_text
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def calc_similarity(jd_text, resume_text_path):
+def calc_similarity(resume_path,jd_text):
   
-  resume_text = extract_pdf_text(resume_text_path)
+  resume_text = extract_pdf_text(resume_path)
   resume_preprocess_text = preprocess_text(resume_text)
   jd_preprocess_text = preprocess_text(jd_text)
     

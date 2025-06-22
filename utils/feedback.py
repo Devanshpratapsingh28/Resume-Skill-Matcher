@@ -1,4 +1,4 @@
-from skill_extractor import extract_skills
+from .skill_extractor import extract_skills
 
 def missing_skills(resume_path,JD):
     skills_present = extract_skills(resume_path)

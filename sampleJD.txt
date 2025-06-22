@@ -1,0 +1,42 @@
+JD_text = """
+Job Title: Software Development Engineer (SDE) – ML/AI Applications
+Location: Remote / Bangalore / Hybrid
+Experience Level: Entry-level / Internship / 0–1 year
+Job Type: Full-time
+Department: Engineering – AI/ML & Web Solutions
+
+Job Description:
+We are seeking a Software Development Engineer with a passion for Machine Learning, Data Science, and Web-based AI applications. The ideal candidate has hands-on experience building and deploying ML models, creating scalable APIs using Flask, and a strong foundation in core computer science subjects like Data Structures, OOP, and DBMS.
+
+Key Responsibilities:
+- Develop, test, and deploy ML/DL models using Python, Scikit-Learn, TensorFlow, etc.
+- Build Flask-based APIs to serve predictive models in production.
+- Perform data preprocessing, feature engineering, and use techniques like SMOTE to handle imbalance.
+- Optimize existing models (e.g., Random Forest, Decision Trees) and improve evaluation metrics (e.g., R², MAE).
+- Collaborate with cross-functional teams to integrate models into end-user applications.
+- Write modular, clean, and version-controlled code using Git.
+- Contribute to both ML pipelines and frontend/backend (basic) integration if needed.
+
+Requirements:
+- Strong Python programming skills.
+- Experience with ML libraries: Scikit-Learn, NumPy, Pandas, Matplotlib, Seaborn.
+- Hands-on deployment experience using Flask (or similar frameworks).
+- Understanding of ML model evaluation and performance improvement.
+- Basic knowledge of web technologies: HTML, CSS.
+- Familiarity with Git, Jupyter Notebooks, and collaborative development workflows.
+- Sound academic background with excellent problem-solving skills.
+
+Preferred Qualifications:
+- Experience in deploying ML models to cloud platforms (e.g., Render, Heroku, AWS).
+- Strong understanding of OOP, DSA, DBMS, and CN.
+- Active participation in coding contests, GitHub contributions, or college tech clubs.
+- Portfolio of ML projects or contributions to open-source.
+
+What We Offer:
+- Work on real-life AI/ML challenges.
+- Mentorship from experienced engineers and data scientists.
+- Collaborative environment with room to grow and explore.
+- Flexibility to innovate, learn, and take ownership of projects.
+
+Join us and turn your ML skills into impactful solutions!
+"""
