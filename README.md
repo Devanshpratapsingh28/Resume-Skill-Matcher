@@ -1,4 +1,4 @@
-# 🧠 Resume Skill Matcher
+# 🧠 SkillFitAI
 
 ### 🚀 Aim
 Create an NLP-based web app that assesses resume-job fit using semantic similarity and highlights missing skills.
