@@ -45,8 +45,8 @@ Create an NLP-based web app that assesses resume-job fit using semantic similari
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/resume-skill-matcher.git
-cd resume-skill-matcher
+git clone https://github.com/Devanshpratapsingh28/SkillFit.git
+cd Resume-Skill-Matcher
 
 # Create and activate a virtual environment
 python -m venv venv
